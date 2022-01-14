@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 
-	width: 100vw;
+	width: 480px;
 	padding: 48px 40px;
 	background-color: #fff;
 
@@ -99,10 +99,10 @@
 	left: 40px;
 	// transform: translateX(-50%);
 
-	@media screen and (max-width: 437px) {
-		left: 50%;
-		transform: translateX(-50%);
-	}
+	// @media screen and (max-width: 437px) {
+	// 	left: 50%;
+	// 	transform: translateX(-50%);
+	// }
 
 	display: flex;
 }

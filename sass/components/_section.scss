@@ -1,5 +1,17 @@
 .section {
 	padding: 60px 0;
+	min-width: 480px;
+
+	@media screen and (min-width: 480px) {
+		min-width: 768px;
+		margin: auto;
+	}
+
+	@media screen and (min-width: 769px) {
+		min-width: 1200px;
+		margin: auto;
+		padding: 94px 0;
+	}
 }
 
 .section-title {

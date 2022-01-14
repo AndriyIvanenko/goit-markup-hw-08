@@ -1,4 +1,4 @@
-.header.section {
+.header {
 	position: sticky;
 	z-index: 1;
 	top: 0;
@@ -13,21 +13,14 @@
 		padding: 21px 0;
 	}
 
-	@media screen and (min-width: 480px) and (max-width: 600px) {
-		width: 600px;
-	}
 	@media screen and (min-width: 769px) {
 		padding: 25px 0;
-		margin: auto;
-		min-width: 1200px;
 	}
 }
 
-.section-container--header {
-	@media screen and (min-width: 600px) and (max-width: 769px) {
-		display: flex;
-		justify-content: space-between;
-	}
+.header-container {
+	display: flex;
+	align-items: center;
 }
 
 .mobile-menu-btn__icon {

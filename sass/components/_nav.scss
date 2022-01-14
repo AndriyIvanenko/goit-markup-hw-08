@@ -3,7 +3,7 @@
 		display: none;
 	}
 
-	margin-left: 28px;
+	margin-left: 88px;
 
 	@media screen and (min-width: 769px) {
 		margin-left: 93px;
@@ -17,19 +17,10 @@
 
 .nav__list {
 	display: flex;
-
-	@media screen and (min-width: 600px) and (max-width: 769px) {
-		width: 38.28vw;
-		justify-content: space-between;
-	}
 }
 
 .nav__item:not(:first-child) {
-	margin-left: 18px;
-
-	@media screen and (min-width: 769px) {
-		margin-left: 50px;
-	}
+	margin-left: 50px;
 }
 .nav__link {
 	font-weight: 500;
