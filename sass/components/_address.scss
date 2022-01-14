@@ -1,0 +1,44 @@
+.address {
+	font-style: normal;
+
+	margin-bottom: 60px;
+	@media screen and (min-width: 769px) {
+		margin-bottom: 0;
+		padding-right: 15px;
+	}
+}
+.address__item {
+	text-align: center;
+
+	@media screen and (min-width: 769px) {
+		text-align: left;
+	}
+}
+.address__item:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.address__link {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	color: $inverseColor;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&--contact {
+		font-weight: 400;
+
+		color: rgba(255, 255, 255, 0.6);
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+		outline: none;
+
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}

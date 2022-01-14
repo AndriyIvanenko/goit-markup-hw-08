@@ -1,0 +1,103 @@
+.signup {
+	@media screen and (min-width: 769px) {
+		margin-left: 93px;
+		padding-top: 12px;
+	}
+}
+.signup__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	text-align: center;
+	@media screen and (min-width: 769px) {
+		text-align: left;
+	}
+	margin-bottom: 20px;
+
+	color: $inverseColor;
+}
+.signup__form {
+	@media screen and (min-width: 769px) {
+		display: flex;
+	}
+}
+.signup__input {
+	width: calc(100vw - 30px);
+	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+	@media screen and (min-width: 769px) {
+		width: 358px;
+		margin: 0;
+	}
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	outline: none;
+
+	padding-left: 16px;
+	margin-bottom: 20px;
+
+	background-color: $backgroundColor;
+
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.6);
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus {
+		border-color: #fff;
+		color: $inverseColor;
+
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.signup__btn {
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+
+	margin: auto;
+	padding: 10px 28px;
+
+	@media screen and (min-width: 769px) {
+		margin: 0;
+		margin-left: 12px;
+	}
+
+	background-color: $accentColor;
+
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	color: $inverseColor;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	cursor: pointer;
+	outline: 1px solid $backgroundColor;
+
+	transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		outline: 1px solid #fff;
+		background-color: #188ce8;
+
+		transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}

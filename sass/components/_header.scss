@@ -1,0 +1,56 @@
+.header.section {
+	position: sticky;
+	z-index: 1;
+	top: 0;
+
+	padding: 16px 0;
+
+	background-color: $inverseColor;
+
+	border-bottom: 1px solid #ececec;
+
+	@media screen and (min-width: 480px) {
+		padding: 21px 0;
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 600px) {
+		width: 600px;
+	}
+	@media screen and (min-width: 769px) {
+		padding: 25px 0;
+		margin: auto;
+		min-width: 1200px;
+	}
+}
+
+.section-container--header {
+	@media screen and (min-width: 600px) and (max-width: 769px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.mobile-menu-btn__icon {
+	fill: currentColor;
+	transition: 250ms;
+}
+.mobile-menu-btn {
+	display: flex;
+	align-self: center;
+	padding: 3px 3px;
+
+	margin-left: auto;
+	border: none;
+	background-color: #fff;
+
+	&:hover,
+	&:focus {
+		color: $accentColor;
+		outline: none;
+		cursor: pointer;
+	}
+
+	@media screen and (min-width: 480px) {
+		display: none;
+	}
+}

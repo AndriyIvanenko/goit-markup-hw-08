@@ -1,0 +1,19 @@
+body {
+	color: $primaryTextColor;
+	font-family: Roboto, sans-serif;
+}
+ul,
+h1,
+h2,
+h3,
+p {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+}

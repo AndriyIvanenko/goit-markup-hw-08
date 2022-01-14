@@ -1,0 +1,236 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+
+	background-color: rgba(0, 0, 0, 0.2);
+
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&.is-hidden {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.modal {
+	position: absolute;
+	width: calc(100vw - 30px);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding: 40px;
+
+	background-color: $inverseColor;
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+}
+
+.modal__close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	border: none;
+	background-color: inherit;
+	padding: 0;
+	display: flex;
+
+	cursor: pointer;
+
+	&:hover {
+		color: $accentColor;
+	}
+}
+
+.modal__close-btn-icon {
+	fill: currentColor;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-form__title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+
+	text-align: center;
+}
+
+.request-form__item {
+	position: relative;
+	margin-top: 28px;
+}
+
+.request-form__label {
+	position: absolute;
+	top: -18px;
+	left: 0;
+
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+
+	color: $secondaryTextColor;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-form__input {
+	width: 100%;
+	height: 38px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	padding-left: 42px;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+
+	&:focus {
+		border-color: $accentColor;
+		outline: none;
+	}
+
+	&:focus + .request-form__icon {
+		fill: $accentColor;
+	}
+
+	&:focus ~ .request-form__label {
+		color: $accentColor;
+	}
+}
+
+.request-form__icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 12px;
+
+	fill: currentColor;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-form__textarea {
+	display: block;
+	padding: 12px 16px;
+
+	width: 100%;
+	height: 118px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	resize: none;
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+
+	&::placeholder {
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.01em;
+
+		color: rgba(117, 117, 117, 0.5);
+	}
+
+	&:focus {
+		border-color: $accentColor;
+		outline: none;
+	}
+}
+
+.request-form__item-agreement {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+
+	color: $secondaryTextColor;
+
+	& a {
+		color: $accentColor;
+		text-decoration: underline;
+	}
+	& a:focus {
+		outline: 1px solid $accentColor;
+		border-radius: 3px;
+	}
+}
+
+.request-form__checkbox {
+	position: absolute;
+	appearance: none;
+
+	&:checked + .request-form__checkbox-icon {
+		background-color: $accentColor;
+		border: 1px solid $accentColor;
+		background-image: url(../images/check.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&:focus + .request-form__checkbox-icon {
+		border: 1px solid $accentColor;
+		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.request-form__checkbox-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 2px;
+
+	background-color: $inverseColor;
+
+	margin-right: 7px;
+
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-form__submit-btn {
+	display: block;
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+
+	margin: auto;
+	margin-top: 30px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	color: $inverseColor;
+	background-color: $accentColor;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		outline: none;
+		background-color: #188ce8;
+	}
+}
