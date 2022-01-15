@@ -148,6 +148,10 @@
 		border-color: $accentColor;
 		outline: none;
 	}
+
+	&:focus ~ .request-form__label {
+		color: $accentColor;
+	}
 }
 
 .request-form__item-agreement {
@@ -211,7 +215,7 @@
 	display: block;
 	width: 200px;
 	height: 50px;
-	border: none;
+	border: 1px solid $inverseColor;
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
@@ -226,11 +230,12 @@
 
 	color: $inverseColor;
 	background-color: $accentColor;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
 		outline: none;
 		background-color: #188ce8;
+		border-color: $secondaryTextColor;
 	}
 }

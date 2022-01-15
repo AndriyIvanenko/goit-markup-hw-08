@@ -9,11 +9,11 @@
 
 	border-bottom: 1px solid #ececec;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 768px) {
 		padding: 21px 0;
 	}
 
-	@media screen and (min-width: 769px) {
+	@media screen and (min-width: 1200px) {
 		padding: 25px 0;
 	}
 }
@@ -43,7 +43,7 @@
 		cursor: pointer;
 	}
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 768px) {
 		display: none;
 	}
 }

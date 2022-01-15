@@ -5,7 +5,7 @@
 .team__list {
 	margin-bottom: -30px;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: -30px;
@@ -20,22 +20,29 @@
 	margin-bottom: 30px;
 
 	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 768px) {
 		margin-left: 30px;
 		width: 354px;
 	}
 
-	@media screen and (min-width: 769px) {
+	@media screen and (min-width: 1200px) {
 		width: 270px;
 	}
 }
 .team__item-img {
 	margin: auto;
-	width: 450px;
+	width: calc(100vw - 30px);
 
 	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+	@media screen and (min-width: 768px) {
 		width: 354px;
 	}
-	@media screen and (min-width: 769px) {
+	@media screen and (min-width: 1200px) {
 		width: 270px;
 	}
 }

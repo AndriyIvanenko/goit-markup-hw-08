@@ -70,47 +70,49 @@
 		<main>
 			<!-- ----------------------------------------------------MOBILE MENU-------------------------------------------- -->
 
-			<div class="mobile-menu-container js-mobile-menu-container" id="mobile-menu">
-				<button class="mobile-menu-close-btn js-mobile-menu-close">
-					<svg class="mobile-menu-close-btn__icon" width="19" height="19">
-						<use href="./images/icons.svg#mobile-menu-close"></use>
-					</svg>
-				</button>
+			<section class="mobile-menu">
+				<div class="mobile-menu-container js-mobile-menu-container" id="mobile-menu">
+					<button class="mobile-menu-close-btn js-mobile-menu-close">
+						<svg class="mobile-menu-close-btn__icon" width="19" height="19">
+							<use href="./images/icons.svg#mobile-menu-close"></use>
+						</svg>
+					</button>
 
-				<ul class="mobile-nav">
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студия</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="#address">Контакты</a>
-					</li>
-				</ul>
-				<ul class="mobile-contacts">
-					<li class="mobile-contacts__item">
-						<a class="mobile-contacts__link phone" href="tel:+380961111111">+38&nbsp096&nbsp111&nbsp11&nbsp11</a>
-					</li>
-					<li class="mobile-contacts__item">
-						<a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-					</li>
-				</ul>
-				<ul class="mobile-sm-list">
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">Instagram</a>
-					</li>
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">Twitter</a>
-					</li>
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">Facebook</a>
-					</li>
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">LinkedIn</a>
-					</li>
-				</ul>
-			</div>
+					<ul class="mobile-nav">
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студия</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="#address">Контакты</a>
+						</li>
+					</ul>
+					<ul class="mobile-contacts">
+						<li class="mobile-contacts__item">
+							<a class="mobile-contacts__link phone" href="tel:+380961111111">+38&nbsp096&nbsp111&nbsp11&nbsp11</a>
+						</li>
+						<li class="mobile-contacts__item">
+							<a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-sm-list">
+						<li class="mobile-sm-list__item">
+							<a class="mobile-sm-list__link" href="">Instagram</a>
+						</li>
+						<li class="mobile-sm-list__item">
+							<a class="mobile-sm-list__link" href="">Twitter</a>
+						</li>
+						<li class="mobile-sm-list__item">
+							<a class="mobile-sm-list__link" href="">Facebook</a>
+						</li>
+						<li class="mobile-sm-list__item">
+							<a class="mobile-sm-list__link" href="">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 
 			<!-- -------------------------------------------------------HERO------------------------------------------------ -->
 
@@ -543,7 +545,6 @@
 						<label class="request-form__label" for="mail">Почта</label>
 					</div>
 					<div class="request-form__item">
-						<label class="request-form__label" for="comment">Комментарий</label>
 						<textarea
 							class="request-form__textarea"
 							id="comment"
@@ -551,6 +552,7 @@
 							rows="6"
 							placeholder="Введите текст"
 						></textarea>
+						<label class="request-form__label" for="comment">Комментарий</label>
 					</div>
 
 					<label class="request-form__item-agreement">
