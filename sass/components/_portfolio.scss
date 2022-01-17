@@ -113,20 +113,6 @@
 	}
 }
 
-.works-list__item-img {
-	width: calc(100vw - 30px);
-
-	@media screen and (min-width: 480px) {
-		width: 450px;
-	}
-	@media screen and (min-width: 768px) {
-		width: 354px;
-	}
-	@media screen and (min-width: 1200px) {
-		width: 370px;
-	}
-}
-
 .works-list__img-container {
 	position: relative;
 	overflow: hidden;

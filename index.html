@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="WebStudio" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -27,7 +28,12 @@
 					<span class="logo__accent">Web</span>
 					Studio
 				</a>
-				<button class="mobile-menu-btn js-mobile-menu-open" aria-expanded="false" aria-controls="mobile-menu">
+				<button
+					class="mobile-menu-btn js-mobile-menu-open"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					aria-label="open menu"
+				>
 					<svg class="mobile-menu-btn__icon" width="24" height="16">
 						<use href="./images/icons.svg#mobile-menu-open"></use>
 					</svg>
@@ -72,7 +78,7 @@
 
 			<section class="mobile-menu">
 				<div class="mobile-menu-container js-mobile-menu-container" id="mobile-menu">
-					<button class="mobile-menu-close-btn js-mobile-menu-close">
+					<button class="mobile-menu-close-btn js-mobile-menu-close" type="button" aria-label="close mobile menu">
 						<svg class="mobile-menu-close-btn__icon" width="19" height="19">
 							<use href="./images/icons.svg#mobile-menu-close"></use>
 						</svg>
@@ -99,16 +105,39 @@
 					</ul>
 					<ul class="mobile-sm-list">
 						<li class="mobile-sm-list__item">
-							<a class="mobile-sm-list__link" href="">Instagram</a>
+							<a
+								class="mobile-sm-list__link"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								Instagram
+							</a>
 						</li>
 						<li class="mobile-sm-list__item">
-							<a class="mobile-sm-list__link" href="">Twitter</a>
+							<a class="mobile-sm-list__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+								Twitter
+							</a>
 						</li>
 						<li class="mobile-sm-list__item">
-							<a class="mobile-sm-list__link" href="">Facebook</a>
+							<a
+								class="mobile-sm-list__link"
+								href="https://www.facebook.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								Facebook
+							</a>
 						</li>
 						<li class="mobile-sm-list__item">
-							<a class="mobile-sm-list__link" href="">LinkedIn</a>
+							<a
+								class="mobile-sm-list__link"
+								href="https://www.linkedin.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								LinkedIn
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -187,7 +216,12 @@
 					<ul class="about__list">
 						<li class="about__item">
 							<div class="about__item-container">
-								<img src="./images/img1.jpg" alt="Програмує на планшеті та десктопі" width="370" />
+								<img
+									srcset="./images/about1.jpg 1x, ./images/about1@2x.jpg 2x"
+									src="./images/about1.jpg"
+									alt="Програмує на планшеті та десктопі"
+									width="370"
+								/>
 								<div class="about__item-overlay">
 									<p class="about__overlay-text">Десктопные приложения</p>
 								</div>
@@ -196,7 +230,12 @@
 
 						<li class="about__item">
 							<div class="about__item-container">
-								<img src="./images/img2.jpg" alt="Робить розмітку на лаптопі для мобільного пристрою" width="370" />
+								<img
+									srcset="./images/about2.jpg 1x, ./images/about2@2x.jpg 2x"
+									src="./images/abot2.jpg"
+									alt="Робить розмітку на лаптопі для мобільного пристрою"
+									width="370"
+								/>
 								<div class="about__item-overlay">
 									<p class="about__overlay-text">Мобильные приложения</p>
 								</div>
@@ -205,7 +244,12 @@
 
 						<li class="about__item">
 							<div class="about__item-container">
-								<img src="./images/img3.jpg" alt="Вибирає кольорову гаму на планшеті" width="370" />
+								<img
+									srcset="./images/about3.jpg 1x, ./images/about3@2x.jpg 2x"
+									src="./images/about3.jpg"
+									alt="Вибирає кольорову гаму на планшеті"
+									width="370"
+								/>
 								<div class="about__item-overlay">
 									<p class="about__overlay-text">Дизайнерские решения</p>
 								</div>
@@ -222,34 +266,67 @@
 					<h2 class="section-title team-title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__item">
-							<img class="team__item-img" src="./images/tm1-ihor.jpg" alt="Ігор" width="270" />
+							<img
+								class="team__item-img"
+								srcset="
+									./images/tm1-ihor-270.jpg    270w,
+									./images/tm1-ihor-354.jpg    354w,
+									./images/tm1-ihor-450.jpg    450w,
+									./images/tm1-ihor-270@2x.jpg 540w,
+									./images/tm1-ihor-354@2x.jpg 708w,
+									./images/tm1-ihor-450@2x.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+								src="./images/tm1-ihor-270.jpg"
+								alt="Ігор"
+							/>
 							<div class="team__item-description">
 								<h3 class="team__item-title">Игорь Демьяненко</h3>
 								<p class="team__item-text" lang="en">Product Designer</p>
 								<ul class="sm-list">
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.instagram.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#instagram"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://twitter.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#twitter"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.facebook.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#facebook"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.linkedin.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#linkedin"></use>
 											</svg>
@@ -259,34 +336,67 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img class="team__item-img" src="./images/tm2-olga.jpg" alt="Ольга" width="270" />
+							<img
+								class="team__item-img"
+								srcset="
+									./images/tm2-olga-270.jpg    270w,
+									./images/tm2-olga-354.jpg    354w,
+									./images/tm2-olga-450.jpg    450w,
+									./images/tm2-olga-270@2x.jpg 540w,
+									./images/tm2-olga-354@2x.jpg 708w,
+									./images/tm2-olga-450@2x.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+								src="./images/tm2-olga-270.jpg"
+								alt="Ольга"
+							/>
 							<div class="team__item-description">
 								<h3 class="team__item-title">Ольга Репина</h3>
 								<p class="team__item-text" lang="en">Frontend Developer</p>
 								<ul class="sm-list">
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.instagram.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#instagram"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://twitter.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#twitter"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.facebook.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#facebook"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.linkedin.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#linkedin"></use>
 											</svg>
@@ -296,34 +406,67 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img class="team__item-img" src="./images/tm3-mykola.jpg" alt="Микола" width="270" />
+							<img
+								class="team__item-img"
+								srcset="
+									./images/tm3-mykola-270.jpg    270w,
+									./images/tm3-mykola-354.jpg    354w,
+									./images/tm3-mykola-450.jpg    450w,
+									./images/tm3-mykola-270@2x.jpg 540w,
+									./images/tm3-mykola-354@2x.jpg 708w,
+									./images/tm3-mykola-450@2x.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+								src="./images/tm3-mykola-270.jpg"
+								alt="Микола"
+							/>
 							<div class="team__item-description">
 								<h3 class="team__item-title">Николай Тарасов</h3>
 								<p class="team__item-text" lang="en">Marketing</p>
 								<ul class="sm-list">
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.instagram.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#instagram"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://twitter.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#twitter"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.facebook.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#facebook"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.linkedin.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#linkedin"></use>
 											</svg>
@@ -333,34 +476,67 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img class="team__item-img" src="./images/tm4-mykhailo.jpg" alt="Михайло" width="270" />
+							<img
+								class="team__item-img"
+								srcset="
+									./images/tm4-mykhailo-270.jpg    270w,
+									./images/tm4-mykhailo-354.jpg    354w,
+									./images/tm4-mykhailo-450.jpg    450w,
+									./images/tm4-mykhailo-270@2x.jpg 540w,
+									./images/tm4-mykhailo-354@2x.jpg 708w,
+									./images/tm4-mykhailo-450@2x.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+								src="./images/tm4-mykhailo-270.jpg"
+								alt="Михайло"
+							/>
 							<div class="team__item-description">
 								<h3 class="team__item-title">Михаил Ермаков</h3>
 								<p class="team__item-text" lang="en">UI Designer</p>
 								<ul class="sm-list">
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.instagram.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#instagram"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://twitter.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#twitter"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.facebook.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#facebook"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="sm-list__item">
-										<a class="sm-list__link sm-list__link--team" href="">
+										<a
+											class="sm-list__link sm-list__link--team"
+											href="https://www.linkedin.com/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
 											<svg class="sm-list__icon" width="20" height="20">
 												<use href="./images/icons.svg#linkedin"></use>
 											</svg>
@@ -463,28 +639,48 @@
 						<h2 class="footer-sm__title">присоединяйтесь</h2>
 						<ul class="sm-list sm-list--footer">
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://www.instagram.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#instagram"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://twitter.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#twitter"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://www.facebook.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#facebook"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://www.linkedin.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#linkedin"></use>
 									</svg>
@@ -515,7 +711,7 @@
 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button class="modal__close-btn" type="button" data-modal-close>
+				<button class="modal__close-btn" type="button" aria-label="close modal" data-modal-close>
 					<svg class="modal__close-btn-icon" width="30" height="30">
 						<use href="./images/icons.svg#close"></use>
 					</svg>
@@ -566,13 +762,13 @@
 				</form>
 			</div>
 		</div>
-		<script src="./modal.js"></script>
+		<script src="./js/modal.js"></script>
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
 		></script>
-		<script defer src="./mobile-menu.js"></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>

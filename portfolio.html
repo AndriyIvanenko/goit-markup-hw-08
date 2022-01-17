@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="WebStudio - Portfolio" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -27,7 +28,12 @@
 					<span class="logo__accent">Web</span>
 					Studio
 				</a>
-				<button class="mobile-menu-btn js-mobile-menu-open" aria-expanded="false" aria-controls="mobile-menu">
+				<button
+					class="mobile-menu-btn js-mobile-menu-open"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					aria-label="open menu"
+				>
 					<svg class="mobile-menu-btn__icon" width="24" height="16">
 						<use href="./images/icons.svg#mobile-menu-open"></use>
 					</svg>
@@ -70,47 +76,72 @@
 		<main>
 			<!-- ----------------------------------------------------MOBILE MENU-------------------------------------------- -->
 
-			<div class="mobile-menu-container js-mobile-menu-container" id="mobile-menu">
-				<button class="mobile-menu-close-btn js-mobile-menu-close">
-					<svg class="mobile-menu-close-btn__icon" width="19" height="19">
-						<use href="./images/icons.svg#mobile-menu-close"></use>
-					</svg>
-				</button>
+			<section class="mobile-menu">
+				<div class="mobile-menu-container js-mobile-menu-container" id="mobile-menu">
+					<button class="mobile-menu-close-btn js-mobile-menu-close" type="button" aria-label="close mobile menu">
+						<svg class="mobile-menu-close-btn__icon" width="19" height="19">
+							<use href="./images/icons.svg#mobile-menu-close"></use>
+						</svg>
+					</button>
 
-				<ul class="mobile-nav">
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студия</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="#address">Контакты</a>
-					</li>
-				</ul>
-				<ul class="mobile-contacts">
-					<li class="mobile-contacts__item">
-						<a class="mobile-contacts__link phone" href="tel:+380961111111">+38 096 111 11 11</a>
-					</li>
-					<li class="mobile-contacts__item">
-						<a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-					</li>
-				</ul>
-				<ul class="mobile-sm-list">
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">Instagram</a>
-					</li>
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">Twitter</a>
-					</li>
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">Facebook</a>
-					</li>
-					<li class="mobile-sm-list__item">
-						<a class="mobile-sm-list__link" href="">LinkedIn</a>
-					</li>
-				</ul>
-			</div>
+					<ul class="mobile-nav">
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студия</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="#address">Контакты</a>
+						</li>
+					</ul>
+					<ul class="mobile-contacts">
+						<li class="mobile-contacts__item">
+							<a class="mobile-contacts__link phone" href="tel:+380961111111">+38&nbsp096&nbsp111&nbsp11&nbsp11</a>
+						</li>
+						<li class="mobile-contacts__item">
+							<a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-sm-list">
+						<li class="mobile-sm-list__item">
+							<a
+								class="mobile-sm-list__link"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								Instagram
+							</a>
+						</li>
+						<li class="mobile-sm-list__item">
+							<a class="mobile-sm-list__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+								Twitter
+							</a>
+						</li>
+						<li class="mobile-sm-list__item">
+							<a
+								class="mobile-sm-list__link"
+								href="https://www.facebook.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								Facebook
+							</a>
+						</li>
+						<li class="mobile-sm-list__item">
+							<a
+								class="mobile-sm-list__link"
+								href="https://www.linkedin.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								LinkedIn
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 
 			<!-- ------------------------------------------------------PORTFOLIO------------------------------------------- -->
 
@@ -145,7 +176,18 @@
 					<ul class="works-list">
 						<li class="works-list__item" data-categoty="Веб-сайт">
 							<div class="works-list__img-container">
-								<img class="works-list__item-img" src="./images/work-example-1.jpg" alt="лаптоп" width="368" />
+								<img
+									class="works-list__item-img"
+									srcset="
+										./images/work-example-1-370.jpg    370w,
+										./images/work-example-1-450.jpg    450w,
+										./images/work-example-1-370@2x.jpg 740w,
+										./images/work-example-1-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-1-370.jpg"
+									alt="лаптоп"
+								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -163,9 +205,15 @@
 							<div class="works-list__img-container">
 								<img
 									class="works-list__item-img"
-									src="./images/work-example-2.jpg"
+									srcset="
+										./images/work-example-2-370.jpg    370w,
+										./images/work-example-2-450.jpg    450w,
+										./images/work-example-2-370@2x.jpg 740w,
+										./images/work-example-2-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-2-370.jpg"
 									alt="постер с баскетболистами"
-									width="368"
 								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
@@ -184,9 +232,15 @@
 							<div class="works-list__img-container">
 								<img
 									class="works-list__item-img"
-									src="./images/work-example-3.jpg"
+									srcset="
+										./images/work-example-3-370.jpg    370w,
+										./images/work-example-3-450.jpg    450w,
+										./images/work-example-3-370@2x.jpg 740w,
+										./images/work-example-3-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-3-370.jpg"
 									alt="логотип ресторана"
-									width="368"
 								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
@@ -203,7 +257,18 @@
 
 						<li class="works-list__item" data-categoty="Маркетинг">
 							<div class="works-list__img-container">
-								<img class="works-list__item-img" src="./images/work-example-4.jpg" alt="наушники" width="368" />
+								<img
+									class="works-list__item-img"
+									srcset="
+										./images/work-example-4-370.jpg    370w,
+										./images/work-example-4-450.jpg    450w,
+										./images/work-example-4-370@2x.jpg 740w,
+										./images/work-example-4-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-4-370.jpg"
+									alt="наушники"
+								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -219,7 +284,18 @@
 
 						<li class="works-list__item" data-categoty="Приложение">
 							<div class="works-list__img-container">
-								<img class="works-list__item-img" src="./images/work-example-5.jpg" alt="две коробки" width="368" />
+								<img
+									class="works-list__item-img"
+									srcset="
+										./images/work-example-5-370.jpg    370w,
+										./images/work-example-5-450.jpg    450w,
+										./images/work-example-5-370@2x.jpg 740w,
+										./images/work-example-5-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-5-370.jpg"
+									alt="две коробки"
+								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -235,7 +311,18 @@
 
 						<li class="works-list__item" data-categoty="Веб-сайт">
 							<div class="works-list__img-container">
-								<img class="works-list__item-img" src="./images/work-example-6.jpg" alt="десктоп" width="368" />
+								<img
+									class="works-list__item-img"
+									srcset="
+										./images/work-example-6-370.jpg    370w,
+										./images/work-example-6-450.jpg    450w,
+										./images/work-example-6-370@2x.jpg 740w,
+										./images/work-example-6-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-6-370.jpg"
+									alt="десктоп"
+								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -251,7 +338,18 @@
 
 						<li class="works-list__item" data-categoty="Дизайн">
 							<div class="works-list__img-container">
-								<img class="works-list__item-img" src="./images/work-example-7.jpg" alt="журнал" width="368" />
+								<img
+									class="works-list__item-img"
+									srcset="
+										./images/work-example-7-370.jpg    370w,
+										./images/work-example-7-450.jpg    450w,
+										./images/work-example-7-370@2x.jpg 740w,
+										./images/work-example-7-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-7-370.jpg"
+									alt="журнал"
+								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -267,7 +365,18 @@
 
 						<li class="works-list__item" data-categoty="Маркетинг">
 							<div class="works-list__img-container">
-								<img class="works-list__item-img" src="./images/work-example-8.jpg" alt="бирка" width="368" />
+								<img
+									class="works-list__item-img"
+									srcset="
+										./images/work-example-8-370.jpg    370w,
+										./images/work-example-8-450.jpg    450w,
+										./images/work-example-8-370@2x.jpg 740w,
+										./images/work-example-8-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-8-370.jpg"
+									alt="бирка"
+								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -285,9 +394,15 @@
 							<div class="works-list__img-container">
 								<img
 									class="works-list__item-img"
-									src="./images/work-example-9.jpg"
+									srcset="
+										./images/work-example-9-370.jpg    370w,
+										./images/work-example-9-450.jpg    450w,
+										./images/work-example-9-370@2x.jpg 740w,
+										./images/work-example-9-450@2x.jpg 900w
+									"
+									sizes="(min-width: 768px) 350px, 100vw"
+									src="./images/work-example-9-370.jpg"
 									alt="работет на лаптопе"
-									width="368"
 								/>
 								<div class="works-list__img-overlay">
 									<p class="works-list__img-overlay-text">
@@ -343,28 +458,48 @@
 						<h2 class="footer-sm__title">присоединяйтесь</h2>
 						<ul class="sm-list sm-list--footer">
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://www.instagram.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#instagram"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://twitter.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#twitter"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://www.facebook.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#facebook"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="sm-list__item">
-								<a class="sm-list__link sm-list__link--footer" href="">
+								<a
+									class="sm-list__link sm-list__link--footer"
+									href="https://www.linkedin.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
 									<svg class="sm-list__icon" width="20" height="20">
 										<use href="./images/icons.svg#linkedin"></use>
 									</svg>
@@ -396,6 +531,6 @@
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
 		></script>
-		<script defer src="./mobile-menu.js"></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>

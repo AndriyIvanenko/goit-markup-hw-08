@@ -32,6 +32,9 @@
 	@media screen and (min-width: 480px) {
 		width: 450px;
 	}
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+	}
 }
 
 .modal__close-btn {
@@ -59,8 +62,12 @@
 .request-form__title {
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width: 1200px) {
+		line-height: 1.15;
+	}
 
 	text-align: center;
 }
@@ -141,6 +148,11 @@
 		line-height: 1.14;
 		letter-spacing: 0.01em;
 
+		@media screen and (min-width: 1200px) {
+			font-size: 12px;
+			line-height: 1.17;
+		}
+
 		color: rgba(117, 117, 117, 0.5);
 	}
 
@@ -162,8 +174,13 @@
 	margin-top: 20px;
 
 	font-size: 12px;
-	line-height: 1.16;
+	line-height: 1.17;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 
 	color: $secondaryTextColor;
 
@@ -215,7 +232,7 @@
 	display: block;
 	width: 200px;
 	height: 50px;
-	border: 1px solid $inverseColor;
+	border: 1px solid $accentColor;
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
@@ -236,6 +253,6 @@
 	&:focus {
 		outline: none;
 		background-color: #188ce8;
-		border-color: $secondaryTextColor;
+		border-color: $primaryTextColor;
 	}
 }

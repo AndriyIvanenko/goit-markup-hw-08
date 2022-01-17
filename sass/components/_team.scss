@@ -19,6 +19,8 @@
 
 	margin-bottom: 30px;
 
+	width: calc(100vw - 30px);
+
 	@media screen and (min-width: 480px) {
 		width: 450px;
 	}
@@ -28,20 +30,6 @@
 		width: 354px;
 	}
 
-	@media screen and (min-width: 1200px) {
-		width: 270px;
-	}
-}
-.team__item-img {
-	margin: auto;
-	width: calc(100vw - 30px);
-
-	@media screen and (min-width: 480px) {
-		width: 450px;
-	}
-	@media screen and (min-width: 768px) {
-		width: 354px;
-	}
 	@media screen and (min-width: 1200px) {
 		width: 270px;
 	}
