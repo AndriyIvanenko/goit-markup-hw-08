@@ -37,10 +37,10 @@
 	}
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: $accentColor;
 		outline: none;
-
-		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		-webkit-tap-highlight-color: transparent;
 	}
 }

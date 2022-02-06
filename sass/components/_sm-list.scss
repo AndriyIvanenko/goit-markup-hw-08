@@ -18,16 +18,17 @@
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		background-color: $accentColor;
 		outline: none;
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	&:hover .sm-list__icon,
-	&:focus .sm-list__icon {
+	&:focus .sm-list__icon,
+	&:active .sm-list__icon {
 		fill: $inverseColor;
-		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 

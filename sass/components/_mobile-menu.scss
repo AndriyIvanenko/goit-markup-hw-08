@@ -64,7 +64,7 @@
 	font-weight: 500;
 
 	// font-size: 40px;
-	font-size: calc(1vw * 8.33);
+	font-size: 8.33vw;
 	@media screen and (min-width: 480px) {
 		font-size: 40px;
 	}
@@ -76,9 +76,11 @@
 	transition: color 250ms;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: $accentColor;
 		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	&--current {
@@ -97,7 +99,7 @@
 	font-weight: 500;
 
 	// font-size: 24px;
-	font-size: calc(1vw * 5);
+	font-size: 5vw;
 	@media screen and (min-width: 480px) {
 		font-size: 24px;
 	}
@@ -111,7 +113,7 @@
 
 	&.phone {
 		// font-size: 34px;
-		font-size: calc(1vw * 7.08);
+		font-size: 7.08vw;
 		@media screen and (min-width: 480px) {
 			font-size: 34px;
 		}
@@ -120,9 +122,11 @@
 	}
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: $accentColor;
 		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
 
@@ -161,8 +165,11 @@
 	border-radius: 4px;
 	transition: 250ms;
 
-	&:focus {
+	&:focus,
+	&:hover,
+	&:active {
 		border-color: $accentColor;
 		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
