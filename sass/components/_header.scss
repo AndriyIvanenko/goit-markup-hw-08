@@ -37,10 +37,12 @@
 	background-color: #fff;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: $accentColor;
 		outline: none;
 		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	@media screen and (min-width: 768px) {
